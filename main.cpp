@@ -23,6 +23,17 @@ using namespace std;
  */
 int sum(int n);
 
+
+/**
+ * Multiplies ints from 1 to n
+ *
+ * @param int n User prompted int
+ * @return int Product from 1 to n
+ * @post Printed product
+ * 
+ */
+int product(int n);
+
 int main() {
   cout << "Hello World!" << endl;
 
@@ -31,6 +42,7 @@ int main() {
   cin >> n;
 
   cout << "Sum: " << sum(n) << endl;
+  cout << "Product: " << product(n) << endl;
   
   return 0;
 }
@@ -43,4 +55,14 @@ int sum(int n) {
   }
   
   return sum;
+}
+
+int product(int n) {
+  int product = n;
+
+  for(int i = (n - 1); i > 0; i--) {
+    product *= i;
+  }
+
+  return product;
 }
