@@ -1,0 +1,62 @@
+Software Engineering Toolkit: GDB.
+Name: 
+Date: 
+
+
+PART A
+Questions
+	- You may need to tinker a bit to find some of the answers.
+	- Make sure to try everything with real code, including your own
+	  past assignments.)
+	  
+1. What is the size in Bytes of the executable of factorial.cpp before and after debugging information is enabled?  How about factorial_iterative.cpp?
+
+2. Why does the final binary exhibit this difference?  Feel free to do some independent, online research in order to provide an accurate answer.
+
+3. When you try GDB for the first time successfully in Emacs (command line mode) do you notice anything different from before?
+
+4. What is the difference between step and next in GDB?
+
+5. How would you tell GDB to put a breakpoint at line 25 in file foo.cpp?
+
+6. How would you tell GDB to put a breakpoint at the function foo in the file bar.cpp?
+
+7. How would you tell GDB to put a breakpoint at the method foo, belonging to the class bar, in the file baz.cpp.
+
+8. What does GDB load up at first in a multi-file program?
+
+9. How do you remove a breakpoint in GDB without exiting Emacs and reloading?
+
+
+PART B
+Please describe what the following terms and GDB commands mean.  You may need to test some of them in GDB to figure out what they do.
+
+Terms
+	-Please define in your own words.  Your definition should include the purpose, and the sort of content you see in each sub-buffer.
+breakpoint
+GUD interaction buffer
+Primary source buffer
+Stack buffer
+Locals/Registers buffer
+I/O buffer
+Breakpoints/Threads buffer
+
+
+
+Commands
+	- For each please give the long form of the command (e.g., b=break) and
+	- define the command in your own words:
+b
+l
+c
+k
+bt
+q
+s 5
+whatis
+info
+info registers
+p variable_name
+i breakpoints
+set var x=20
+

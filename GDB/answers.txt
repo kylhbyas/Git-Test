@@ -1,0 +1,73 @@
+Software Engineering Toolkit: GDB.
+Name: Kyle Byassee
+Date: 2022-10-13
+
+
+PART A
+Questions
+	- You may need to tinker a bit to find some of the answers.
+	- Make sure to try everything with real code, including your own
+	  past assignments.)
+	  
+1. What is the size in Bytes of the executable of factorial.cpp before and after debugging information is enabled?  How about factorial_iterative.cpp?
+   	       factorial  	     	    	     factorial_iterative
+   16656 Bytes. 	33656 Bytes.		 16296 Bytes.	31272 Bytes.
+
+2. Why does the final binary exhibit this difference?  Feel free to do some independent, online research in order to provide an accurate answer.
+   The -g flag adds some data to allow gdb to display variable names, stack frames, and register information.
+
+3. When you try GDB for the first time successfully in Emacs (command line mode) do you notice anything different from before?
+   No, it looks the same as gdb on the command line.
+
+4. What is the difference between step and next in GDB?
+   step: steps through all the linked code, line by line.
+   next: runs runs the program normally until the next breakpoint.
+
+5. How would you tell GDB to put a breakpoint at line 25 in file foo.cpp?
+   b 25
+
+6. How would you tell GDB to put a breakpoint at the function foo in the file bar.cpp?
+   b foo
+
+7. How would you tell GDB to put a breakpoint at the method foo, belonging to the class bar, in the file baz.cpp.
+   b foo
+
+8. What does GDB load up at first in a multi-file program?
+   main.cpp
+
+9. How do you remove a breakpoint in GDB without exiting Emacs and reloading?
+   d breapointNum
+
+
+PART B
+Please describe what the following terms and GDB commands mean.  You may need to test some of them in GDB to figure out what they do.
+
+Terms
+	-Please define in your own words.  Your definition should include the purpose, and the sort of content you see in each sub-buffer.
+breakpoint: A mandatory haulting point in the code.
+GUD interaction buffer: gdb commands are entered here.
+Primary source buffer: The primary source code buffer. Allows the source code to be visible during debugging.
+Stack buffer: The stack frames appear in this buffer.
+Locals/Registers buffer: Info in the registers will appear in this buffer.
+I/O buffer: The input/output buffer. User interaction will appear here.
+Breakpoints/Threads buffer: All the breakpoints and threads appear here.
+
+
+
+Commands
+	- For each please give the long form of the command (e.g., b=break) and
+	- define the command in your own words:
+b = break: b line or b function adds a breakpoint at the indicated location.
+l = list: lists more of the source code around the breakpoint.
+c = continue: continues to next breakpoint or end of program or next user interaction.
+k = kill: kills the running program.
+bt = back-trace: back-traces through the stack frames to main.
+q = quit: quits gdb.
+s 5 = take 5 steps in the running program.
+whatis = whatis variablename returns the data type for a variable.
+info = with no arguement prints all info sub subcommands.
+info registers = prints the info in the registers
+p variable_name = prints variable_name
+i breakpoints = prints the info on all breakpoints.
+set var x=20 = sets the variable named x to 20.
+
