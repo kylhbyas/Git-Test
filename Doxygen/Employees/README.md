@@ -6,7 +6,7 @@
    - 
    - Basic readme for Doxygen Assignment
    -->
-# HW07 - Business Corp Employee Management System
+# Business Corp Employee Management System
 
 Name: Kyle Byassee
 
