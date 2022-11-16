@@ -4,7 +4,7 @@
  * @date 2022-03-09
  * @brief Runs the EmployeeTests to verify class functionality.
  * 
- * Business Corp to make their Employee Management System much more personable by using classes with inheritance to hold employee information. Extra Credit Attempted.
+ * Business Corp to make their Employee Management System much more personable by using classes with inheritance to hold employee information.
  */
 #include <iostream>
 #include "Employee.h"
