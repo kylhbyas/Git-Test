@@ -24,13 +24,13 @@ Questions
    next: runs runs the program normally until the next breakpoint.
 
 5. How would you tell GDB to put a breakpoint at line 25 in file foo.cpp?
-   b 25
+   b foo.cpp:25
 
 6. How would you tell GDB to put a breakpoint at the function foo in the file bar.cpp?
-   b foo
+   b bar.cpp:foo
 
 7. How would you tell GDB to put a breakpoint at the method foo, belonging to the class bar, in the file baz.cpp.
-   b foo
+   b baz.cpp:bar::foo
 
 8. What does GDB load up at first in a multi-file program?
    main.cpp
