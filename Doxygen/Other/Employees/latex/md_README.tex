@@ -1,0 +1,77 @@
+\hypertarget{md_README_autotoc_md0}{}\doxysection{Business Corp Employee Management System}\label{md_README_autotoc_md0}
+Name\+: Kyle Byassee
+
+Date\+: 2022-\/03-\/14
+
+This is a Doxygen project.\hypertarget{md_README_autotoc_md1}{}\doxysubsection{Required Files}\label{md_README_autotoc_md1}
+
+\begin{DoxyItemize}
+\item Makefile
+\begin{DoxyItemize}
+\item controls compilation and cleans temporary and extraneous files.
+\end{DoxyItemize}
+\item \mbox{\hyperlink{Employee_8h}{Employee.\+h}}
+\begin{DoxyItemize}
+\item Declares the base class.
+\end{DoxyItemize}
+\item \mbox{\hyperlink{Supervisor_8h}{Supervisor.\+h}}
+\begin{DoxyItemize}
+\item Declares a derived class.
+\end{DoxyItemize}
+\item \mbox{\hyperlink{Officer_8h}{Officer.\+h}}
+\begin{DoxyItemize}
+\item Declares another derived class from the base class.
+\end{DoxyItemize}
+\item \mbox{\hyperlink{Employee_8cpp}{Employee.\+cpp}}
+\begin{DoxyItemize}
+\item Contains the definitions of the methods for the base class.
+\end{DoxyItemize}
+\item \mbox{\hyperlink{Supervisor_8cpp}{Supervisor.\+cpp}}
+\begin{DoxyItemize}
+\item Contains the definitions of the methods for one of the derived classes.
+\end{DoxyItemize}
+\item \mbox{\hyperlink{Officer_8cpp}{Officer.\+cpp}}
+\begin{DoxyItemize}
+\item Contains the definitions of the methods for another one of the derived classes.
+\end{DoxyItemize}
+\item \mbox{\hyperlink{main_8cpp}{main.\+cpp}}
+\begin{DoxyItemize}
+\item Contains the main function as well as the run\+Employee\+Tests function.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md2}{}\doxysubsection{Compilation Instructions}\label{md_README_autotoc_md2}
+How do we compile your program? To compile type $<$make$>$ which calls the Makefile.\hypertarget{md_README_autotoc_md3}{}\doxysubsection{Program usage}\label{md_README_autotoc_md3}
+How do we run your program?
+\begin{DoxyItemize}
+\item To run the program\+:
+\begin{DoxyItemize}
+\item Compile the program.
+\item type $<$./employee$>$ to run the executable.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Does it expect any inputs?
+\begin{DoxyItemize}
+\item The program will prompt the user for information.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md4}{}\doxysubsection{Notes}\label{md_README_autotoc_md4}
+
+\begin{DoxyItemize}
+\item What is working?
+\begin{DoxyItemize}
+\item The program is believed to be working as intended.
+\end{DoxyItemize}
+\item What are the limitations of the program?
+\begin{DoxyItemize}
+\item No limitations are immediately apparent.
+\end{DoxyItemize}
+\item What design decisions did you make?
+\begin{DoxyItemize}
+\item The derived classes call the base class\textquotesingle{}s methods to minimize code duplication.
+\item Consistency was the primary consideration at the time of writing.
+\end{DoxyItemize}
+\item Note, Interesting point\+:
+\begin{DoxyItemize}
+\item The run\+Employee\+Tests function calls each object by reference to exercise the polymorphism trait of objects and by doing so reduces duplicate code.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\+:tada\+: \+:octocat\+: \+:tada\+: 
